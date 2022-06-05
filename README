@@ -1,1 +1,19 @@
 Language Learning Toolkit (LLTK)
+
+To run: 
+
+Load from /etc:
+
+secret_key
+db_secret_user
+db_sercet_pass
+
+Currently runs only on django runserver.
+
+The database should be called mypostgres.
+
+The database runs on port 5432.
+
+psycopg2 and libpq-dev may need to be installed if using the starter image. Assumes db on 172.16.16.8. 
+
+
