@@ -2,6 +2,7 @@
     <head>
         <title>LLTK</title>
         {% load bootstrap5 %}
+        {% load static %}
         {% bootstrap_css %}
         {% bootstrap_javascript %}
         {% bootstrap_messages %}
@@ -12,10 +13,14 @@
         <section>
             {% include 'navbar.html' %}
         </section>
-        
         <section>
-            {% block content %}
-            {% endblock %}
+            {% include 'banner.html' %}
+        </section>
+        <section>
+            <div class="pt-3">
+                {% block content %}
+                {% endblock %}
+            </div>
         </section>
     </body>
 

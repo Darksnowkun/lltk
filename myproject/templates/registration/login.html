@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card bg-secondary">
+<div class="card-body">
+<form class="g-3" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <div class="row">
+            <span class="col-5"></span>
+            <label for="form_username" class="form-label col-1">{{ form.username.label_tag }}</label>
+            <div class="form-label col-2" id="form_username">{{ form.username }}</div>
+            <span class="col-4"></span>
+        </div>
+        <div class="row">
+            <span class="col-5"></span>
+            <label for="form_password" class="form-label col-1">{{ form.password.label_tag }}</label>
+            <div class="form-label col-2">{{ form.password }}</div>
+            <span class="col-4"></span>
+        </div>
+        <br/>
+        <div class="row">
+            <span class="col-5"></span>
+            <button type="submit" class="btn btn-primary col-4">login</button>
+            <span class="col"></span>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+{% endblock %}
