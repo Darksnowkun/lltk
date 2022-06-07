@@ -10,7 +10,7 @@ db_sercet_pass
 
 Currently runs only on django runserver.
 
-The database should be called mypostgres.
+The database should be called mypostgres2.
 
 The database runs on port 5432.
 
