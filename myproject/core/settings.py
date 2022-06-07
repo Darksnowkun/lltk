@@ -87,7 +87,7 @@ with open('/etc/db_secret_pass') as f:
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mypostgres',
+        'NAME': 'mypostgres2',
         'USER': dbuser,
         'PASSWORD': dbuserpass,
         'HOST': '172.16.16.8',

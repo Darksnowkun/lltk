@@ -18,10 +18,8 @@ from django.urls import path
 from pages.views import HomePageView
 from django.contrib.auth.views import LoginView
 from django.urls import include
+from .views import ProfileView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', HomePageView.as_view(), name="home"),
-    path('login', LoginView.as_view(), name="login"),
-    path('accounts/', include('accounts.urls')),
+    path('profile/', ProfileView.as_view(), name="profile"),
 ]
