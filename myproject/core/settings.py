@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'pages',
     'bootstrap5',
+    'languages',
 ]
 
 MIDDLEWARE = [

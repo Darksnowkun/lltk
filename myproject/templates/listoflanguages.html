@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul>
+{% for ob in object_list %}
+    
+    <li>{{ob.language}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
